@@ -98,6 +98,7 @@ the links, also referred to "a" in this section. */
     padding: 10px 20px;
     max-width: 900px;
     margin: 0 auto;
+    gap: 20px
 }
 
 .content {
@@ -169,6 +170,10 @@ the links, also referred to "a" in this section. */
 }
 
 /*-------------CHILD COMBINATORS---------------*/
+
+#childcombinator {
+    margin-bottom: 80px;
+}
 #childcombinator img {
     display: block;
     max-width: 500px;
@@ -243,11 +248,10 @@ h3+p {
 
 .images-row img {
     max-width: 400px;
-    width: 100%;
+    width: 80%;
     height: auto;
-    margin-bottom: 100px;
 }
-@media (max-width: 600px) {
+@media (max-width: 400px) {
 
     .images-row {
         flex-direction: column;
