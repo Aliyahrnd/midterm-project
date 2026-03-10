@@ -43,9 +43,10 @@ div element that is a direct child of the hero section. */
 
 .introduction {
     color: rgb(235, 238, 250);
+    text-align: center;
     font-size: 1.3rem;
     max-width: 800px;
-    text-align: center;
+    margin: 0 auto;
 }
 
 /*-------------NAV---------------*/
@@ -105,12 +106,10 @@ the links, also referred to "a" in this section. */
     line-height: 1.6;
     display: flex;
     flex-direction: column;
-    gap: 120px;
 }
 
     .twocolumns {
         display: flex;
-    gap: 40px;
     align-items: center;
 }
 
@@ -125,7 +124,6 @@ the links, also referred to "a" in this section. */
 
 .example-section {
     display: flex;
-    gap: 40px;
     margin-top: 20px;
 }
 
