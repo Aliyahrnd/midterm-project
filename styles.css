@@ -8,6 +8,14 @@ body {
     padding: 15px 0;
 }
 
+.section-divider {
+    border: none;
+    height: 2px;
+    background-color: rgb(105, 125, 162);
+    margin: 120px auto;
+    width: 70%;
+}
+
 /*-------------HOME---------------*/
 .hero {
     background: rgb(105, 125, 162);
@@ -19,7 +27,7 @@ body {
 
 /* This child combinator selects only one 
 div element that is a direct child of the hero section. */
-.hero > div {
+.hero>div {
     max-width: 900px;
     width: 100%;
     padding: 5px 20px;
@@ -98,7 +106,6 @@ the links, also referred to "a" in this section. */
     padding: 10px 20px;
     max-width: 900px;
     margin: 0 auto;
-    gap: 20px
 }
 
 .content {
@@ -109,8 +116,8 @@ the links, also referred to "a" in this section. */
     flex-direction: column;
 }
 
-    .twocolumns {
-        display: flex;
+.twocolumns {
+    display: flex;
     align-items: center;
 }
 
@@ -174,6 +181,7 @@ the links, also referred to "a" in this section. */
 #childcombinator {
     margin-bottom: 80px;
 }
+
 #childcombinator img {
     display: block;
     max-width: 500px;
@@ -251,6 +259,7 @@ h3+p {
     width: 80%;
     height: auto;
 }
+
 @media (max-width: 400px) {
 
     .images-row {
@@ -262,7 +271,7 @@ h3+p {
 
 /*-------------GENERAL COMBINATORS---------------*/
 .generalsiblingexample {
-    margin: 40px 0;
+    margin-top: 60px;
 }
 
 .generalsiblingexample .explanation {
