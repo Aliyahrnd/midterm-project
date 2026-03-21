@@ -40,7 +40,7 @@
 
     <!-- section one -->
     <div class="content">
-        <div class="Descendant" id="descendantcombinator">
+        <div class="descendant" id="descendantcombinator">
             <h2 class="subtitle">Descendant Combinator</h2>
             <div class="twocolumns">
                 <p class="description">The descendant combinator is represented by a space between two selectors. It
@@ -51,7 +51,7 @@
                 <img src="Screenshot/descendantimg.png" alt="Descendant combinator example">
             </div>
             <p class="description">Another example is the picture shown above. We use <code>&lt;a href=""&gt;</code> to
-                attach the links in the nav bar to it's proper section of content. When we go into CSS, we first adress
+                attach the links in the nav bar to its proper section of content. When we go into CSS, we first address
                 the id, which is "navbar", and then address the link, which is refered to as "a". The space connects
                 them. </p>
 
@@ -78,7 +78,7 @@
         </div>
 
         <!-- section two -->
-        <div class="Child" id="childcombinator">
+        <div class="child" id="childcombinator">
             <h2 class="subtitle">Child Combinator</h2>
             <div class="column">
                 <p class="description">The child combinator is represented by the ">" symbol. It selects only the direct
@@ -88,16 +88,10 @@
                     <code>&lt;p&gt;</code> elements.
                 </p>
             </div>
-            <p class="description">The child combinator is represented by the ">" symbol. It selects only the direct
-                children of a specified element. For example, the selector "div > p" will select only the
-                <code>&lt;p&gt;</code>
-                elements that are direct children of a <code>&lt;div&gt;</code> element, excluding any nested
-                <code>&lt;p&gt;</code> elements.
-            </p>
 
             <div class="example-row">
                 <img src="Screenshot/childcombimg.png" alt="Child combinator example">
-                <p class="description">THis example uses <code>hero &gt; div </code> to select the div that is a direct
+                <p class="description">This example uses <code>hero &gt; div </code> to select the div that is a direct
                     child of the hero section.
                     It is important to note that anything nested in the div will not get selected, since it isnt a
                     direct
@@ -119,86 +113,85 @@
                 <hr class="section-divider">
 
             </div>
+        </div>
+        <!-- section three -->
+        <div class="adjacent" id="adjacentsiblingcombinator">
+            <h2 class="subtitle">Adjacent Sibling Combinator</h2>
+            <p class="description">The adjacent combinator, also referred to as the adjacnt sibling combinator, is
+                represented by the "+" symbol. It selects an
+                element that is immediately following another element. For example, the selector "h3 + p" will
+                select
+                the first <code>&lt;p&gt;</code> element that comes immediately after an <code>&lt;h3&gt;</code>
+                element.</p>
 
-            <!-- section three -->
-            <div class="Adjacent" id="adjacentsiblingcombinator">
-                <h2 class="subtitle">Adjacent Sibling Combinator</h2>
-                <p class="description">The adjacent combinator, also referred to as the adjacnt sibling combinator, is
-                    represented by the "+" symbol. It selects an
-                    element that is immediately following another element. For example, the selector "h3 + p" will
-                    select
-                    the first <code>&lt;p&gt;</code> element that comes immediately after an <code>&lt;h3&gt;</code>
-                    element.</p>
+            <section class="adjacent-example">
 
-                <section class="adjacent-example">
+                <div class="exampleadjacent">
+                    <h3>h3 heading</h3>
+                    <p>This paragraph is immediately after the h3 and is styled using the adjacent combinator.</p>
 
-                    <div class="exampleadjacent">
-                        <h3>h3 heading</h3>
-                        <p>This paragraph is immediately after the h3 and is styled using the adjacent combinator.</p>
-
-                        <h4>h4 heading</h4>
-                        <p>This paragraph is not styled because the combinator only affects the paragraph immediately
-                            after an h3.</p>
-                    </div>
-
-
-                    <div class="explanationadjacent">
-                        <p>This is an example of an adjacent combinator. In this example, <code>h3 + p</code> only
-                            styles the <code>&lt;p&gt;</code> that immediately follows an <code>&lt;h3&gt;</code>.</p>
-                        <section class="images-row">
-                            <img src="Screenshot/adjacent1.png" alt="Image 1" class="image">
-                            <img src="Screenshot/adjacent2.png" alt="Image 2" class="image">
-                        </section>
-                    </div>
+                    <h4>h4 heading</h4>
+                    <p>This paragraph is not styled because the combinator only affects the paragraph immediately
+                        after an h3.</p>
+                </div>
 
 
-                </section>
-                <hr class="section-divider">
-
-            </div>
-
-            <!-- section four -->
-            <div class="General" id="generalsiblingcombinator">
-                <h2 class="subtitle">General Sibling Combinator</h2>
-                <p class="description">The general sibling combinator is represented by the "~" symbol. It selects all
-                    elements that are siblings of a specified element, regardless of their position. For example, the
-                    selector "h1 ~ p" will select all <code>&lt;p&gt;</code> elements that are siblings of an
-                    <code>&lt;h1&gt;</code> element, even if they are not immediately following it.
-                </p>
-                <section class="generalsiblingexample">
-
-                    <div class="explanation">
-                        <p>The <code>~</code> combinator selects **all siblings that come after a specific element**,
-                            not just the one immediately following.
-                            In this example, <code>h3 ~ p</code> styles <code>&lt;p&gt;</code> elements that appear
-                            anywhere after an <code>&lt;h3&gt;</code> within the same container.</p>
-                    </div>
-
-                    <section class="images-row2">
-                        <img src="Screenshot/sibling1.png" alt="General Sibling Example 1">
-                        <img src="Screenshot/sibling2.png" alt="General Sibling Example 2">
+                <div class="explanationadjacent">
+                    <p>This is an example of an adjacent combinator. In this example, <code>h3 + p</code> only
+                        styles the <code>&lt;p&gt;</code> that immediately follows an <code>&lt;h3&gt;</code>.</p>
+                    <section class="images-row">
+                        <img src="Screenshot/adjacent1.png" alt="Image 1" class="image">
+                        <img src="Screenshot/adjacent2.png" alt="Image 2" class="image">
                     </section>
+                </div>
 
-                    <div class="code-section">
-                        <h3>h3 heading</h3>
-                        <p>This paragraph is styled using h3 ~ p</p>
-                        <p>This one is also styled because it comes after the h3</p>
 
-                        <h3> h3 heading also</h3>
-                        <p>Another paragraph styled with h3 ~ p</p>
-                    </div>
-
-                </section>
-            </div>
+            </section>
+            <hr class="section-divider">
 
         </div>
+        <!-- section four -->
+        <div class="general" id="generalsiblingcombinator">
+            <h2 class="subtitle">General Sibling Combinator</h2>
+            <p class="description">The general sibling combinator is represented by the "~" symbol. It selects all
+                elements that are siblings of a specified element, regardless of their position. For example, the
+                selector "h1 ~ p" will select all <code>&lt;p&gt;</code> elements that are siblings of an
+                <code>&lt;h1&gt;</code> element, even if they are not immediately following it.
+            </p>
+            <section class="generalsiblingexample">
 
-        <!-- js -->
-        <script>
-            function toggleChild() {
-                document.getElementById("childDemo").classList.toggle("active");
-            }
-        </script>
+                <div class="explanation">
+                    <p>The <code>~</code> combinator selects **all siblings that come after a specific element**,
+                        not just the one immediately following.
+                        In this example, <code>h3 ~ p</code> styles <code>&lt;p&gt;</code> elements that appear
+                        anywhere after an <code>&lt;h3&gt;</code> within the same container.</p>
+                </div>
+
+                <section class="images-row2">
+                    <img src="Screenshot/sibling1.png" alt="General Sibling Example 1">
+                    <img src="Screenshot/sibling2.png" alt="General Sibling Example 2">
+                </section>
+
+                <div class="code-section">
+                    <h3>h3 heading</h3>
+                    <p>This paragraph is styled using h3 ~ p</p>
+                    <p>This one is also styled because it comes after the h3</p>
+
+                    <h3> h3 heading also</h3>
+                    <p>Another paragraph styled with h3 ~ p</p>
+                </div>
+
+            </section>
+        </div>
+    </div>
+
+
+    <!-- js -->
+    <script>
+        function toggleChild() {
+            document.getElementById("childDemo").classList.toggle("active");
+        }
+    </script>
 </body>
 
 </html>
